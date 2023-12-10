@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-58dp">
+
+    <TextView
+        android:id="@+id/usertv"
+        android:layout_width="198dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:text="Username:"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/usert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usertv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        />
+
+    <TextView
+
+        android:id="@+id/pstv"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/usert"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="28dp"
+        android:text="Password:"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/pset"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_below="@+id/pstv"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/hbtn"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_below="@+id/pset"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="234dp"
+            android:background="@color/black"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/Pbtn"
+            android:layout_width="186dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/pset"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="238dp"
+            android:layout_toEndOf="@+id/hbtn"
+            android:background="@color/white"
+            android:text="Login"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

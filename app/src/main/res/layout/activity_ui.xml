@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-58dp">
+
+        <TextView
+            android:id="@+id/wtv"
+            android:layout_width="237dp"
+            android:layout_height="158dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:text="Welcome Contestant!"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="146dp"
+            android:layout_height="73dp"
+            android:layout_below="@+id/wtv"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="184dp"
+            android:layout_toEndOf="@+id/ustv"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/userhighscore"
+            android:layout_width="149dp"
+            android:gravity="right"
+            android:layout_height="73dp"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="41dp"
+            android:layout_toEndOf="@+id/ush"
+
+
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/ush"
+            android:layout_width="199dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/ustv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="46dp"
+            android:text="High score:"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/ustv"
+            android:layout_width="143dp"
+            android:layout_height="73dp"
+            android:layout_below="@+id/wtv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="184dp"
+            android:text="User:"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/hbtn"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_below="@+id/ush"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="45dp"
+            android:background="@color/black"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/Pbtn"
+            android:layout_width="186dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/userhighscore"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@+id/hbtn"
+            android:background="@color/white"
+            android:text="Play"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
